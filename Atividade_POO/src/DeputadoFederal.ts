@@ -36,6 +36,34 @@ export default class DeputadoFederal extends Politico{
         this.bancada = bancada
     }
 
+    mandato():void{
+        console.log('Legislar sobre o código penal, sobre o código tributário, sobre as leis trabalhistas e fiscalizar o Presidente da República.')
+    }
+
+    VotarPecs():string{
+        return 'Votar Projeto de Emenda à Constituição Federal'
+    }
+
+    CriarCPI():string{
+        return 'Criar a CPI nacional'
+    }
+
+    VotarPPA():string{
+        return 'Votar a PPA'
+    }
+
+    VotarLOA():string{
+        return 'Votar a LOA'
+    }
+
+    VotarLDO():string{
+        return 'Votar a LDO'
+    }
+
+    ProporLeisComp():string{
+        return 'Propor leis complementares'
+    }
+
     ImprimeInfo():void{
         console.log(
             `Nome: ${this.getNome()} - Partido: ${this.getPartido()}

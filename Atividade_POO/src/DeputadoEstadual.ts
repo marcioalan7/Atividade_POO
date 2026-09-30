@@ -47,6 +47,30 @@ export default class DeputadoEstadual extends Politico{
         this.listaComissoes = listaComissoes
     }
 
+    mandato():void{
+        console.log('Legislar sobre assuntos de interesses do estado.' + 'Fiscalizar o governador')
+    }
+
+    VotarPPA():string{
+        return 'Votar a PPA'
+    }
+
+    VotarLOA():string{
+        return 'Votar a LOA'
+    }
+
+    VotarLDO():string{
+        return 'Votar a LDO'
+    }
+
+    ProporEmendas():string{
+        return 'Propor emendas à constituição estadual.'
+    }
+
+    CriarCPI():string{
+        return 'Criação da CPI estadual.'
+    }
+
     ImprimeInfo():void{
         console.log(
             `Nome: ${this.getNome()} - Partido: ${this.getPartido()}

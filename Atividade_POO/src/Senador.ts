@@ -47,6 +47,22 @@ export default class Senador extends Politico{
         this.anoEleito = anoEleito
     }
 
+    mandato():void{
+        console.log('Sabatina e aprova ministros do STF, procurador-geral da república e presidentes do banco central, legisla sobre leis federais e autoriza operações financeiras extremas.')
+    }
+
+    AprovarAutoridades():string{
+        return 'Aprova autoridades de alto escalão.'
+    }
+    
+    JulgarCrimes():string{
+        return 'Julga crimes de responsabilidade.'
+    }
+
+    RepresentarEstado():string{
+        return 'Representa os interesses do estado.'
+    }
+
     ImprimeInfo():void{
         console.log(
             `Nome: ${this.getNome()} - Partido: ${this.getPartido()}
