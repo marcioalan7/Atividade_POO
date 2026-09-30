@@ -19,6 +19,28 @@ export default class Governador extends Politico {
     setNomeEstado(nomeEstado) {
         this.nomeEstado = nomeEstado;
     }
+    mandato() {
+        console.log("O governador sanciona leis estaduais, veta leis estaduais, " +
+            "decreta estado de calamidade e envia PEC à Assembleia Legislativa.");
+    }
+    gerirPoliciaMilitar() {
+        return "Gerir a Polícia Militar do Estado.";
+    }
+    administrarRodoviasEstaduais() {
+        return "Administrar as rodovias estaduais.";
+    }
+    coordenarEducacaoESaude() {
+        return "Coordenar a educação e a saúde do Estado.";
+    }
+    elaborarPPA() {
+        return "Elaborar e enviar o PPA estadual à Assembleia Legislativa.";
+    }
+    elaborarLDO() {
+        return "Elaborar e enviar a LDO estadual à Assembleia Legislativa.";
+    }
+    elaborarLOA() {
+        return "Elaborar e enviar a LOA estadual à Assembleia Legislativa.";
+    }
     ImprimeInfo() {
         console.log(`Nome: ${this.getNome()} - Partido: ${this.getPartido()}
             - Esfera: ${this.getEsfera()} - Poder: ${this.getPoder()}
