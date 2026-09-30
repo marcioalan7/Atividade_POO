@@ -11,6 +11,41 @@ export default class Presidente extends Politico {
     setQuantidadeMinistros(quantidadeMinistros) {
         this.quantidadeMinistros = quantidadeMinistros;
     }
+
+    mandato():void {
+        console.log(
+            "O presidente sanciona, propõe e veta leis e edita medidas provisórias."
+        );
+    }
+
+    nomearMinistro():string {
+        return "Nomear Ministros de Estado.";
+    }
+
+    exonerarMinistro():string {
+        return "Exonerar Ministros de Estado.";
+    }
+
+    comandarForcasArmadas(): string {
+        return "Comandar as Forças Armadas.";
+    }
+
+    representarPais(): string {
+        return "Representar o país em eventos internacionais.";
+    }
+
+    elaborarPPA(): string {
+        return "Elaborar e enviar ao Congresso Nacional o Plano Plurianual (PPA) nacional.";
+    }
+
+    elaborarLDO(): string {
+        return "Elaborar e enviar ao Congresso Nacional a Lei de Diretrizes Orçamentárias (LDO) nacional.";
+    }
+
+    elaborarLOA(): string {
+        return "Elaborar e enviar ao Congresso Nacional a proposta de Lei Orçamentária Anual (LOA) nacional.";
+    }
+
     ImprimeInfo() {
         console.log(`Nome: ${this.getNome()} - Partido: ${this.getPartido()}
             - Esfera: ${this.getEsfera()} - Poder: ${this.getPoder()}
